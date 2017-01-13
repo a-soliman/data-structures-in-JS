@@ -7,3 +7,8 @@
 // stack.prototype.push = function(element) {
 //   this.items.push(element);
 // };
+
+// //pop method
+// stack.prototype.pop = function() {
+//   return this.items.pop();
+// };
