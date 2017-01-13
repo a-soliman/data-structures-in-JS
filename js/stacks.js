@@ -23,3 +23,8 @@
 // stack.prototype.empty = function() {
 //   return this.items.length === 0;
 // };
+
+// //size method
+// stack.prototype.size = function() {
+//   return this.items.length;
+// };
