@@ -18,3 +18,8 @@
 //   var index = this.items.length -1;
 //   return this.items[index];
 // };
+
+// //empty method
+// stack.prototype.empty = function() {
+//   return this.items.length === 0;
+// };
