@@ -45,3 +45,7 @@ function Stack() {
   this.push = function(element) {
     items.push(element);
   };
+
+  this.pop = function() {
+    items.pop();
+  };
