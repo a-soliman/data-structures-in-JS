@@ -34,3 +34,7 @@
 //   this.items = [];
 // };
 
+// //print method
+// stack.prototype.print = function() {
+//   console.log(this.items.toString());
+// };
