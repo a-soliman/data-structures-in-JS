@@ -29,4 +29,8 @@
 //   return this.items.length;
 // };
 
+// //clrar method
+// stack.prototype.clear = function() {
+//   this.items = [];
+// };
 
