@@ -38,3 +38,10 @@
 // stack.prototype.print = function() {
 //   console.log(this.items.toString());
 // };
+
+//==================================================================================
+function Stack() {
+  var items = [];
+  this.push = function(element) {
+    items.push(element);
+  };
