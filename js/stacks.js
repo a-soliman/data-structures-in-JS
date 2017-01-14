@@ -49,3 +49,7 @@ function Stack() {
   this.pop = function() {
     items.pop();
   };
+
+  this.isEmpty = function() {
+    return items === 0;
+  };
