@@ -14,3 +14,8 @@ Queue.prototype.dequeue = function() {
   this.items.shift();
   return val;
 };
+
+Queue.prototype.front = function() {
+  var val = this.items[0];
+  return val;
+};
