@@ -57,7 +57,12 @@ function Stack() {
   this.size = function() {
     return items.length;
   };
-  
+
   this.clear = function() {
     items = [];
   };
+  
+  this.print = function() {
+    return items.toString()
+  }
+}
