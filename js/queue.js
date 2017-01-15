@@ -29,3 +29,8 @@ Queue.prototype.isEmpty = function() {
 Queue.prototype.size = function() {
   return this.items.length;
 };
+
+
+Queue.prototype.print = function() {
+  return this.items.toString();
+}
