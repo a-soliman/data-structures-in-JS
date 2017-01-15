@@ -61,8 +61,22 @@ function Stack() {
   this.clear = function() {
     items = [];
   };
-  
+
   this.print = function() {
     return items.toString()
   }
 }
+
+
+//=== TESTING ===//
+var myStack = new Stack();
+myStack.push(10);
+myStack.push(5);
+myStack.push(7);
+// console.log(myStack);
+// console.log('Peek : ', myStack.peek())
+console.log('Is Empty :', myStack.isEmpty())
+console.log('Size : ', myStack.size())
+myStack.print()
+myStack.pop()
+myStack.print()
