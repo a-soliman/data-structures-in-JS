@@ -53,3 +53,7 @@ function Stack() {
   this.isEmpty = function() {
     return items === 0;
   };
+  
+  this.size = function() {
+    return items.length;
+  };
