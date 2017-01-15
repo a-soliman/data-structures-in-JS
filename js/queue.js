@@ -24,3 +24,8 @@ Queue.prototype.front = function() {
 Queue.prototype.isEmpty = function() {
   return this.items === 0;
 };
+
+
+Queue.prototype.size = function() {
+  return this.items.length;
+};
