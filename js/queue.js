@@ -19,3 +19,8 @@ Queue.prototype.front = function() {
   var val = this.items[0];
   return val;
 };
+
+
+Queue.prototype.isEmpty = function() {
+  return this.items === 0;
+};
