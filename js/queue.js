@@ -42,3 +42,10 @@ queue.enqueue('ahmed');
 queue.enqueue('Lilit');
 queue.enqueue('Leyla');
 
+
+console.log(queue);
+console.log(queue.front());
+console.log(queue);
+console.log(queue.isEmpty());
+console.log(queue.size());
+console.log(queue.print());
