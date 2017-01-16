@@ -34,3 +34,11 @@ Queue.prototype.size = function() {
 Queue.prototype.print = function() {
   return this.items.toString();
 }
+
+//==== TESTING ===
+
+var queue = new Queue();
+queue.enqueue('ahmed');
+queue.enqueue('Lilit');
+queue.enqueue('Leyla');
+
