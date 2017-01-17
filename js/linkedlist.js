@@ -129,3 +129,16 @@ LinkedList.prototype.indexOf = function(value) {
   }
   return indexes;
 };
+
+// print method
+LinkedList.prototype.print = function() {
+  var items = [];
+  
+  var currentNode = this.head;
+  while(currentNode) {
+    items.push(currentNode.value)
+    
+    currentNode = currentNode.next;
+  }
+  return items.toString();
+};
