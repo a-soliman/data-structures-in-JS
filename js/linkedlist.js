@@ -35,3 +35,17 @@ LinkedList.prototype.size = function() {
   }
   return size;
 };
+
+
+// adding a head node through the prototype
+LinkedList.prototype.addToHead = function(value) {
+	var newNode = new Node(value,this.head, null);
+	//checking if the list is NOT EMPTY
+	if(this.head) {
+		this.head.prev = newNode;
+	} else {
+		this.tail = newNode;
+	}
+	this.head = newNode;
+};
+
