@@ -142,3 +142,37 @@ LinkedList.prototype.print = function() {
   }
   return items.toString();
 };
+
+//removeAt any specific position
+LinkedList.prototype.removeAt = function(index) {
+  var val;
+  
+  if(index === 0 ) {
+    val = this.head.value;
+    this.removeHead();
+  }
+  else if(index === this.size() -1) {
+    val = this.tail.value;
+    this.removeTail();
+  }
+  else {
+    var currentNode = this.head;
+    var currentIndex =0;
+    var prevNode;
+    var nextNode;
+    
+    while(currentNode) {
+      if(index === currentIndex) {
+        val = currentNode.value
+        prevNode = currentNode.prev;
+        nextNode = currentNode.next;
+        
+        prevNode.next = nextNode;
+        nextNode.prev = prevNode;
+      }
+      currentNode = currentNode.next;
+      currentIndex++;
+    }
+  }
+  return val;
+}
