@@ -49,3 +49,16 @@ LinkedList.prototype.addToHead = function(value) {
 	this.head = newNode;
 };
 
+
+// adding a tail node through the prototype
+LinkedList.prototype.addToTail = function(value) {
+	var newNode = new Node(value, null, this.tail);
+	//checking if the list isn't empty
+	if(this.tail) {
+		this.tail.next = newNode;
+	} else {
+		this.head = newNode;
+	}
+	this.tail = newNode;
+};
+
