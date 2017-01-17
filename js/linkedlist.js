@@ -95,3 +95,37 @@ LinkedList.prototype.removeTail = function() {
   }
   return val;
 };
+
+//Search the LinkedList
+LinkedList.prototype.search = function(serchedValue) {
+  var currentNode = this.head;
+  
+  while(currentNode) {
+    if(currentNode.value === serchedValue) {
+      return currentNode.value;
+    }
+    currentNode = currentNode.next;
+  }
+  return null;
+};
+
+//find index index of an element
+LinkedList.prototype.indexOf = function(value) {
+  if(!this.head) {
+    return null;
+  } else {
+    var currentNode = this.head;
+    var currentIndex = 0;
+    var indexes = [];
+    
+    while(currentNode) {
+      if(currentNode.value === value) {
+        indexes.push(currentIndex);
+      }
+      
+      currentNode = currentNode.next;
+      currentIndex++;
+    }
+  }
+  return indexes;
+};
