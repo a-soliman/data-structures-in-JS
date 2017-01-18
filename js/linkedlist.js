@@ -230,3 +230,13 @@ LinkedList.prototype.remove = function(value) {
     }
   }
 };
+
+
+// === TESTING ===
+var ll = new LinkedList();
+
+ll.addToHead(1000)
+ll.addToHead(1000)
+ll.addToHead(1000)
+ll.addToHead(2000)
+ll.addToHead(3000)
