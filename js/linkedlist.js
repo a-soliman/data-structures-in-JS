@@ -176,3 +176,34 @@ LinkedList.prototype.removeAt = function(index) {
   }
   return val;
 }
+
+// insertAt method to add an element at a spesific index
+LinkedList.prototype.insertAt = function(index, value) {
+  //if the index is the head
+  if(index === 0) {
+    this.addToHead(value);
+  }
+  //if the index is the tail
+  else if(index === this.size() -1) {
+    this.addToTail(value);
+  }
+  //otherwise
+  else{
+    var newNode;
+    var prevNode;
+    var currentNode = this.head;
+    var currentIndex = 0;
+    
+    while(currentNode) {
+     if(index === currentIndex) {
+       prevNode = currentNode.prev;
+       newNode = new Node(value, currentNode, prevNode)
+       prevNode.next = newNode;
+       currentNode.prev = newNode;
+     }
+     
+     currentNode = currentNode.next;
+     currentIndex++;
+    }
+  }
+};
