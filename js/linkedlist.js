@@ -252,3 +252,13 @@ console.log('size : ', ll.size())
 console.log(ll.print())
 ll.insertAt(1, 515)
 console.log(ll.print())
+
+console.log(ll.remove(1000))
+console.log(ll.remove(3000))
+// console.log(ll.remove(10))
+// console.log(ll.removeHead())
+console.log(ll.print())
+
+// console.log(ll.indexOf(20))
+// console.log('index of : ', ll.indexOf(3000))
+
