@@ -240,3 +240,7 @@ ll.addToHead(1000)
 ll.addToHead(1000)
 ll.addToHead(2000)
 ll.addToHead(3000)
+
+ll.addToTail(30)
+ll.addToTail(20)
+ll.addToTail(10)
