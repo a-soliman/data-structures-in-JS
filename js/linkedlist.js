@@ -207,3 +207,26 @@ LinkedList.prototype.insertAt = function(index, value) {
     }
   }
 };
+
+//remove method to compine indexOf and removeAt
+LinkedList.prototype.remove = function(value) {
+  if(this.size() < 1) {
+    return null;
+  }
+  else {
+    var index = this.indexOf(value).shift();
+    
+    if(index === 0) {
+      this.removeHead();
+    }
+    else if(index === this.size() -1) {
+      this.removeTail();
+    }
+    else {
+    var val = value;
+    this.removeAt(index);
+    return val;
+      
+    }
+  }
+};
