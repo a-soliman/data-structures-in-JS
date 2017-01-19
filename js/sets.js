@@ -11,3 +11,12 @@ Set.prototype.add = function(value) {
   }
   return false;
 };
+
+//delete method 
+Set.prototype.delete = function(value) {
+  if(this.has(value)) {
+    delete this.items[value];
+    return true;
+  }
+  return false;
+};
