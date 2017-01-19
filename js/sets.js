@@ -20,3 +20,8 @@ Set.prototype.delete = function(value) {
   }
   return false;
 };
+
+//has(value) method to check if the set containes a value
+Set.prototype.has = function(value) {
+  return this.items.hasOwnProperty(value);
+};
