@@ -25,3 +25,9 @@ Set.prototype.delete = function(value) {
 Set.prototype.has = function(value) {
   return this.items.hasOwnProperty(value);
 };
+
+//clear method
+Set.prototype.clear = function() {
+  this.items = {};
+};
+
