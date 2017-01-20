@@ -31,3 +31,15 @@ Set.prototype.clear = function() {
   this.items = {};
 };
 
+//size method
+Set.prototype.size = function() {
+  var count = 0;
+  
+  for(var key in this.items) {
+    if(this.items.hasOwnProperty(key)) {
+      count++;
+    }
+  }
+  return count;
+};
+
