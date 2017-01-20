@@ -115,3 +115,13 @@ Set.prototype.subset = function(otherSet) {
     return true;
   }
 };
+
+
+// === TESTING ===
+// var set = new Set();
+
+// set.add(1);
+// set.add(2);
+// set.add(10);
+
+// // set.delete(1);
