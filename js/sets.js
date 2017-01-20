@@ -87,3 +87,15 @@ Set.prototype.intersection = function(otherSet) {
   return intersectionSet;
 };
 
+// 3) Diffrence
+Set.prototype.diffrence = function(otherSet) {
+  var diffrenceSet = new Set();
+  
+  var values = this.values();
+  for(var i = 0; i < values.length; i++) {
+    if(!otherSet.has(values[i])) {
+      diffrenceSet.add(values[i]);
+    }
+  }
+  return diffrenceSet;
+};
