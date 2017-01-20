@@ -54,3 +54,6 @@ Set.prototype.values = function() {
   }
   return valuesArray;
 };
+
+// === SET OPERATIONS ===
+  // 1) union,  2) Intersection,  3) Diffrence,  4) Subset.
