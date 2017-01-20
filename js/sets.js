@@ -125,3 +125,11 @@ Set.prototype.subset = function(otherSet) {
 // set.add(10);
 
 // // set.delete(1);
+
+// set.has(2);
+
+// console.log('size : ',set.size())
+
+// console.log('Values : ' ,set.values());
+// console.log('set : ' ,set.items);
+
