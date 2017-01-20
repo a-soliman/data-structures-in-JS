@@ -57,3 +57,20 @@ Set.prototype.values = function() {
 
 // === SET OPERATIONS ===
   // 1) union,  2) Intersection,  3) Diffrence,  4) Subset.
+
+// 1) Union 
+Set.prototype.union = function(otherSet) {
+  var unionSet = new Set();
+  
+  var values = this.values();
+  for(var i =0; i <values.length; i++) {
+    unionSet.add(values[i]);
+  }
+  
+  values = otherSet.values();
+  for(var i = 0; i<values.length; i++) {
+    unionSet.add(values[i]);
+  }
+  return unionSet;
+};
+
