@@ -43,3 +43,14 @@ Set.prototype.size = function() {
   return count;
 };
 
+//values method to return an Array containing all the values
+Set.prototype.values = function() {
+  var valuesArray =[];
+  
+  for(var value in this.items) {
+    if(this.items.hasOwnProperty(value)) {
+      valuesArray.push(this.items[value]);
+    }
+  }
+  return valuesArray;
+};
