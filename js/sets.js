@@ -145,3 +145,6 @@ setB.add(3);
 setB.add(4);
 setB.add(5);
 setB.add(6);
+
+var unionAB = setA.union(setB);
+console.log('Union SET : ', unionAB.values());
