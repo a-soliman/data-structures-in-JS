@@ -155,3 +155,5 @@ console.log('intersection SET : ', intersectionSetAB.values());
 var diffrenceAB = setA.diffrence(setB);
 console.log('Diffrence SET : ', diffrenceAB.values());
 
+var subsetAB = setA.subset(setB);
+console.log('Subset SET : ', subsetAB);
