@@ -148,3 +148,6 @@ setB.add(6);
 
 var unionAB = setA.union(setB);
 console.log('Union SET : ', unionAB.values());
+
+var intersectionSetAB = setA.intersection(setB);
+console.log('intersection SET : ', intersectionSetAB.values());
