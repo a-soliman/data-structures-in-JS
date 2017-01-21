@@ -151,3 +151,7 @@ console.log('Union SET : ', unionAB.values());
 
 var intersectionSetAB = setA.intersection(setB);
 console.log('intersection SET : ', intersectionSetAB.values());
+
+var diffrenceAB = setA.diffrence(setB);
+console.log('Diffrence SET : ', diffrenceAB.values());
+
