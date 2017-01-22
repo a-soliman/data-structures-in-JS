@@ -104,3 +104,29 @@ HashTable.prototype.insert = function(key, value) {
 //     currentNode.value = null;
 //   }
 // };
+
+//get method to retrive information
+HashTable.prototype.get = function(key) {
+  //hash the key to deside whick bucket to look in
+  var index = this.hash(key);
+  //check if the bucket is empty
+  if(!this.buckets[index]) {
+    return null;
+  }
+  // if the bucket isn't empty
+  else {
+    var currentNode = this.buckets[index];
+    
+    //loop through the chain in the bucket
+    while(currentNode) {
+      //check the currentNode's key
+      if(currentNode.key === key) {
+        return currentNode;
+      }
+      //move to the next node
+      currentNode = currentNode.next;
+    }
+    
+    return null;
+  }
+}
