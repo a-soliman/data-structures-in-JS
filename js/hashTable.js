@@ -130,3 +130,22 @@ HashTable.prototype.get = function(key) {
     return null;
   }
 }
+
+//retriveAll method to get all the information stored in the HashTable
+HashTable.prototype.retriveAll = function() {
+  //an Array to contain the results
+  var allNodes = [];
+  
+  //loop through the table buckets
+  for(var i = 0; i < this.numBuckets; i++) {
+    
+    //creat a start pont for looping
+    var currentNode = this.buckets[i];
+    
+    while(currentNode) {
+      allNodes.push(currentNode);
+      currentNode = currentNode.next;
+    }
+  }
+  return allNodes;
+}
