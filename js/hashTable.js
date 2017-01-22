@@ -69,3 +69,38 @@ HashTable.prototype.insert = function(key, value) {
     currentNode.next = new HashNode(key, value)
   }
 }
+
+// // remove method
+// HashTable.prototype.remove = function(key) {
+//   //hash it into a number
+//   var index = this.hash(key);
+  
+//   //check if the place is empty
+//   if(!this.buckets[index]) {
+//     return null;
+//   }
+//   //check if the place = the key
+//   else if(this.buckets[index].key === key) {
+//     console.log(key, ' is located in the 1st position');
+//     if(!this.buckets[index].next) {
+//       this.buckets[index] = null;
+//     }
+//   }
+//   else {
+//     var currentNode = this.buckets[index];
+    
+//     while(currentNode.next) {
+//       if(currentNode.key === key) {
+//         console.log('found ' + key + ' located at : ')
+//         currentNode.key = null;
+//         currentNode.value = null;
+//         return;
+//       }
+//       currentNode = currentNode.next;
+//     }
+//     //remove here too
+//     console.log('found ' + key + ' at the last position')
+//     currentNode.key = null;
+//     currentNode.value = null;
+//   }
+// };
