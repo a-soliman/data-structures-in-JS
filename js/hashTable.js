@@ -160,3 +160,9 @@ myHT.insert('Dane', 'dane@yahoo.com')
 // console.log(myHT.buckets[8])
 // console.log(myHT.get('Dean'))
 console.log(myHT.retriveAll())
+
+
+console.log('--------------------------------------')
+
+myHT.remove('Dean')
+console.log(myHT.retriveAll())
