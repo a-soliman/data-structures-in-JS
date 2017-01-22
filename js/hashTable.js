@@ -149,3 +149,10 @@ HashTable.prototype.retriveAll = function() {
   }
   return allNodes;
 }
+
+
+var myHT = new HashTable(30);
+
+myHT.insert('Dean', 'dean@gmail.com')
+myHT.insert('Megan', 'megan@gmail.com')
+myHT.insert('Dane', 'dane@yahoo.com')
