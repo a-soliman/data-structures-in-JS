@@ -156,3 +156,7 @@ var myHT = new HashTable(30);
 myHT.insert('Dean', 'dean@gmail.com')
 myHT.insert('Megan', 'megan@gmail.com')
 myHT.insert('Dane', 'dane@yahoo.com')
+
+// console.log(myHT.buckets[8])
+// console.log(myHT.get('Dean'))
+console.log(myHT.retriveAll())
