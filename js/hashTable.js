@@ -21,3 +21,19 @@ HashTable.prototype.hash = function(key) {
   
   return bucket;
 }
+
+// HashTable.prototype.insert = function(key, value) {
+//   var index = this.hash(key)
+  
+//   if(!this.buckets[index]) {
+//     this.buckets[index] = new HashNode(key, value);
+//   }
+//   else {
+//     var currentNode = this.buckets[index]
+    
+//     while(currentNode.next) {
+//       currentNode = currentNode.next; 
+//     }
+//     currentNode.next = new HashNode(key, value);
+//   }
+// }
