@@ -20,3 +20,8 @@ Dictionary.prototype.delete = function(key) {
 Dictionary.prototype.has = function(key) {
   return key in this.items;
 };
+
+// get method
+Dictionary.prototype.get = function(key) {
+  return this.has(key) ? this.items[key] : undefined;
+};
