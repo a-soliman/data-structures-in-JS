@@ -15,3 +15,8 @@ Dictionary.prototype.delete = function(key) {
   }
   return false;
 };
+
+// has metod to check if a specific value does exist
+Dictionary.prototype.has = function(key) {
+  return key in this.items;
+};
