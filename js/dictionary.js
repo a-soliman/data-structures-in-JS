@@ -25,3 +25,8 @@ Dictionary.prototype.has = function(key) {
 Dictionary.prototype.get = function(key) {
   return this.has(key) ? this.items[key] : undefined;
 };
+
+// clear method 
+Dictionary.prototype.clear = function() {
+  this.items = {};
+};
