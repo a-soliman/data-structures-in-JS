@@ -42,3 +42,10 @@ Dictionary.prototype.size = function() {
   return count;
 };
 
+
+// keys method => returns an array of the keys
+Dictionary.prototype.keys = function() {
+  return Object.keys(this.items);
+};
+
+
