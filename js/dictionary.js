@@ -71,4 +71,5 @@ Dictionary.prototype.values = function() {
 // dictionary.set('John', 'john@gmail.com');
 // dictionary.set('Tyrion', 'tyrion@email.com');
 
-
+// console.log('has() : ', dictionary.has('Gandalf'));
+// console.log('Size : ', dictionary.size());
