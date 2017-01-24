@@ -73,3 +73,16 @@ Dictionary.prototype.values = function() {
 
 // console.log('has() : ', dictionary.has('Gandalf'));
 // console.log('Size : ', dictionary.size());
+
+
+// console.log('Keys : ', dictionary.keys());
+// console.log('values :', dictionary.values());
+// console.log('get() : ', dictionary.get('Tyrion'));
+
+// dictionary.delete('John');
+
+// console.log('Size : ', dictionary.size());
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
