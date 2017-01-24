@@ -49,3 +49,14 @@ Dictionary.prototype.keys = function() {
 };
 
 
+// values method => returns an array of the methods
+Dictionary.prototype.values = function() {
+  var allValues = [];
+  for(var key in this.items) {
+    if(this.items.hasOwnProperty(key)) {
+      allValues.push(this.items[key]);
+    }
+  }
+  return allValues;
+};
+
