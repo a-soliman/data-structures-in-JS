@@ -30,3 +30,15 @@ Dictionary.prototype.get = function(key) {
 Dictionary.prototype.clear = function() {
   this.items = {};
 };
+
+// size method
+Dictionary.prototype.size = function() {
+  var count = 0;
+  for(var key in this.items) {
+    if(this.items.hasOwnProperty(key)) {
+      count++;
+    }
+  }
+  return count;
+};
+
