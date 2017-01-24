@@ -60,3 +60,15 @@ Dictionary.prototype.values = function() {
   return allValues;
 };
 
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// // === TESTING ===
+
+// var dictionary = new Dictionary();
+
+// dictionary.set('Gandalf', 'gandalf@email.com');
+// dictionary.set('John', 'john@gmail.com');
+// dictionary.set('Tyrion', 'tyrion@email.com');
+
+
