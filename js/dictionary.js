@@ -93,3 +93,13 @@ Dictionary.prototype.values = function() {
 function HashTable() {
   this.table =[];
 }
+
+
+// == valuePair constructor ==
+HashTable.prototype.valuePair = function(key, value) {
+  this.key = key;
+  this.value = value;
+  this.toString = function() {
+    return '[' + this.key + ' - ' + this.value + ']';
+  }
+};
