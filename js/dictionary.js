@@ -113,3 +113,20 @@ HashTable.prototype.loseloseHashCode = function(key) {
   }
   return hash % 37;
 };
+
+
+// == put method ==
+HashTable.prototype.put = function(key, value) {
+  var position = this.loseloseHashCode(key);
+  
+  if(this.table[position] === undefined) {
+    this.table[position] = new this.valuePair(key, value);
+  }
+  else {
+    var index = ++position;
+    while(this.table[index] != undefined) {
+      index++;
+    }
+    this.table[index] = new this.valuePair(key, value);
+  }
+};
