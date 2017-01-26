@@ -103,3 +103,13 @@ HashTable.prototype.valuePair = function(key, value) {
     return '[' + this.key + ' - ' + this.value + ']';
   }
 };
+
+// == Hash methood ==
+HashTable.prototype.loseloseHashCode = function(key) {
+  var hash = 0;
+  
+  for(var i = 0; i < key.length; i++) {
+    hash += key.charCodeAt(i);
+  }
+  return hash % 37;
+};
