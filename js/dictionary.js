@@ -151,3 +151,13 @@ HashTable.prototype.get = function(key) {
   }
   return undefined;
 };
+
+
+// == print method == 
+HashTable.prototype.print = function() {
+  for(var i = 0; i < this.table.length; i++) {
+    if(this.table[i] !== undefined) {
+      console.log(i +' : ' + this.table[i]);
+    }
+  }
+};
