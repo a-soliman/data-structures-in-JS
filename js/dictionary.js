@@ -130,3 +130,24 @@ HashTable.prototype.put = function(key, value) {
     this.table[index] = new this.valuePair(key, value);
   }
 };
+
+
+// == get method == 
+HashTable.prototype.get = function(key) {
+  var position = this.loseloseHashCode(key);
+  if(this.table[position] !== undefined) {
+    var current = this.table[position]
+    
+    while(current.next) {
+      if(current.element.key === key) {
+        return current.element.value;
+      }
+      current = current.next;
+    }
+    //check incase first or last element
+    if(current.key === key) {
+      return current.value;
+    }
+  }
+  return undefined;
+};
