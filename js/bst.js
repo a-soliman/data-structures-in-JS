@@ -85,3 +85,21 @@ BST.prototype.depthFirstTraversal = function (iteratorFunc, order) {
     iteratorFunc(this.value);
   }
 };
+
+//breadthFirstTraversal method
+BST.prototype.breadthFirstTraversal = function(iteratorFunc) {
+  var queue = [this];
+  
+  while(queue.length) {
+    var treeNode = queue.shift();
+    iteratorFunc(treeNode);
+    
+    if(treeNode.left) {
+      queue.push(treeNode.left);
+    }
+    
+    if(treeNode.right) {
+      queue.push(treeNode.right);
+    }
+  }
+};
