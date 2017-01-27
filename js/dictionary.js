@@ -161,3 +161,19 @@ HashTable.prototype.print = function() {
     }
   }
 };
+
+
+// === TESTING ===
+var hash = new HashTable();
+hash.put('Gandalf', 'gandalf@email.com');
+hash.put('John', 'john@email.com');
+hash.put('Tyrion', 'tyrion@email.com');
+hash.put('Aaron', 'aaron@email.com');
+hash.put('Donnie', 'donnie@email.com');
+hash.put('Ana', 'ana@email.com');
+hash.put('Jonathan', 'jonathann@email.com');
+hash.put('Jamie', 'jamie@email.com');
+hash.put('Sue', 'sue@email.com');
+hash.put('Mindy', 'mindy@email.com');
+hash.put('Paul', 'pauln@email.com');
+hash.put('Nathan', 'nathan@email.com');
