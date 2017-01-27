@@ -183,3 +183,5 @@ console.log(hash.get('Loiane'));
 
 hash.remove('Gandalf');
 console.log(hash.get('Gandalf'));
+
+hash.print();
