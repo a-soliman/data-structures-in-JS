@@ -32,3 +32,32 @@ BST.prototype.insert = function(value) {
     }
   }
 }
+
+// CONTAINES method to search through the Tree
+BST.prototype.containes = function(value) {
+  //check if the value is equal to the root's value
+  if(value === this.value) {
+    return true;
+  }
+  else {
+    //check if the value is less or grater than the root 
+    if(value < this.value) {
+      // checkif the left side is free
+      if(!this.left) {
+        return false;
+      }
+      else {
+        return this.left.containes(value);
+      }
+    }
+    else if (value > this.value) {
+      // check if the RIGHT side is free
+      if(!this.right) {
+        return false;
+      }
+      else{
+        return this.right.containes(value);
+      }
+    }
+  }      
+};
