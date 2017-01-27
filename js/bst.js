@@ -5,6 +5,7 @@ function BST(value) {
   this.left = null;
   this.right = null;
 }
+
 // INSERT method
 
 BST.prototype.insert = function(value) {
@@ -19,3 +20,15 @@ BST.prototype.insert = function(value) {
       this.left.insert(value)
     }
   }
+  //if the value is greater than the root
+  else if (value > this.value) {
+    //check is the RIGHT side is free
+    if(!this.right) {
+      this.right = new BST(value);
+    }
+    //Otherwise
+    else {
+      this.right.insert(value)
+    }
+  }
+}
