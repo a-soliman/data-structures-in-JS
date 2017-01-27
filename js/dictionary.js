@@ -177,3 +177,9 @@ hash.put('Sue', 'sue@email.com');
 hash.put('Mindy', 'mindy@email.com');
 hash.put('Paul', 'pauln@email.com');
 hash.put('Nathan', 'nathan@email.com');
+
+console.log(hash.get('Gandalf'));
+console.log(hash.get('Loiane'));
+
+hash.remove('Gandalf');
+console.log(hash.get('Gandalf'));
