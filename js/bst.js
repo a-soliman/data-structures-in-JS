@@ -61,3 +61,27 @@ BST.prototype.containes = function(value) {
     }
   }      
 };
+
+// depthFirstTraversal method => to go through the Tree's nodes in depthFirstTraversal
+BST.prototype.depthFirstTraversal = function (iteratorFunc, order) {
+  if(order === 'pre-order') {
+    iteratorFunc(this.value);
+  }
+  
+  //check if there is a LEFT child and reun it iteratorFunc
+  if(this.left) {
+    this.left.depthFirstTraversal(iteratorFunc, order);
+  }
+  if(order === 'in-order') {
+    iteratorFunc(this.value);
+  }
+  
+  //check if there is a RIGHT child and run it on
+  if(this.right) {
+    depthFirstTraversal(iteratorFunc, order);
+  }
+  
+  if(order === 'post- order') {
+    iteratorFunc(this.value);
+  }
+};
