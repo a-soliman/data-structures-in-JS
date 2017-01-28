@@ -198,3 +198,9 @@ bst.insert(10);
 
 console.log('MIN : ' , bst.getMinVal())
 console.log('MAX : ' , bst.getMaxVal())
+
+
+bst.remove(100);
+console.log('MAX : ' , bst.getMaxVal())
+console.log(bst.find(45))
+
