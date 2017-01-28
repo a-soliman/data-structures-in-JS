@@ -194,3 +194,7 @@ bst.insert(35);
 bst.insert(85);
 bst.insert(105);
 bst.insert(10);
+
+
+console.log('MIN : ' , bst.getMinVal())
+console.log('MAX : ' , bst.getMaxVal())
