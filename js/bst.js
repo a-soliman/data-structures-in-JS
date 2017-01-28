@@ -123,3 +123,29 @@ BST.prototype.getMaxVal = function() {
     return this.value;
   }
 };
+
+// remove method ==
+BST.prototype.remove = function(value) {
+  if(!this.containes(value)) {
+    return null;
+  }
+  else {
+    var key = this.find(value)
+    //if it was a leaf
+    if(!key.left && !key.right) {
+      //code goes here
+      //code goes here
+      //code goes here
+      key = null;
+      return key;
+    }
+    //if it has one child
+    else if(key.left && !key.right) {
+      key = key.left;
+    } 
+    else if(key.righ && !key.left) {
+      key = key.right;
+    }
+    //if it has 2 child
+  }
+};
