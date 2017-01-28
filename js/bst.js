@@ -149,3 +149,29 @@ BST.prototype.remove = function(value) {
     //if it has 2 child
   }
 };
+
+//find;
+BST.prototype.find = function(value) {
+  var node;
+  
+  if(value === this.value) {
+  node = this;  
+  return node;
+  }
+  else if(value < this.value) {
+    if(!this.left) {
+      return false;
+    }
+    else {
+      return this.left.find(value);
+    }
+  }
+  else if(value > this.value) {
+    if(!this.right) {
+      return false;
+    }
+    else {
+      return this.right.find(value);
+    }
+  }
+};
