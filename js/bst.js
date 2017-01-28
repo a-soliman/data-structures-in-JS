@@ -175,3 +175,7 @@ BST.prototype.find = function(value) {
     }
   }
 };
+
+function log(value) {
+	console.log(value)
+}
