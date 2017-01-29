@@ -10,3 +10,6 @@ function ArrayList() {
   this.toString = function() {
     return array.join();
   };
+
+  //The bubble sort Algo
+  this.bubbleSort = function() {
