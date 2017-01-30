@@ -33,3 +33,9 @@ function ArrayList() {
     array[index1] = array[index2];
     array[index2] = aux;
   };
+
+  //Selection sort
+  this.selectionSort = function() {
+    
+    var length = array.length;
+    var indexMin;
