@@ -60,3 +60,20 @@ function ArrayList() {
     var length = array.length;
     var j;
     var temp;
+
+    //loop through.. starting by the second element (i = 1)
+    for(var i = 1; i < length; i++) {
+      j = i;
+      //the temprary element in the array
+      temp = array[i];
+      
+      //while loop to find the right spot (while the element before is greater than our element)
+      while(j > 0 && array[j-1] > temp) {
+        //bring the element before and place it after
+        array[j] = array[j-1];
+        //move one step before
+        j--;
+      }
+      array[j] = temp;
+    }
+  };
