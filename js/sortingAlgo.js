@@ -39,3 +39,16 @@ function ArrayList() {
     
     var length = array.length;
     var indexMin;
+    for(var i = 0; i < length-1; i++) {
+      indexMin = i;
+      
+      for(var j = i; j <length; j++) {
+        if(array[indexMin] > array[j]) {
+          indexMin = j;
+        }
+      }
+      if(i !== indexMin) {
+        swap(array, i, indexMin);
+      }
+    }
+  };
