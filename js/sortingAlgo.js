@@ -26,3 +26,10 @@ function ArrayList() {
       }
     }
   };
+
+  //swap function
+  var swap = function(array, index1, index2) {
+    var aux = array[index1];
+    array[index1] = array[index2];
+    array[index2] = aux;
+  };
