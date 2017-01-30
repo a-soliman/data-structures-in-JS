@@ -77,3 +77,8 @@ function ArrayList() {
       array[j] = temp;
     }
   };
+
+  // Merge sort
+  this.mergeSort = function() {
+    array = mergeSortRec(array);
+  };
