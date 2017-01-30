@@ -86,3 +86,18 @@ function ArrayList() {
   //helper func to break down the array into its half 
   var mergeSortRec = function(array) {
     var length = array.length;
+
+    //check if the array containes single element => if it is then it's sorted
+    if(length === 1) {
+      return array;
+    } else{
+    
+    //store the half-length of the array
+    var mid = Math.floor(length / 2);
+    var left = array.slice(0, mid);
+    var right = array.slice(mid, length);
+    
+    //return the merged sorted left and the merged sorted right
+    return merge(mergeSortRec(left), mergeSortRec(right));
+    }
+  };
