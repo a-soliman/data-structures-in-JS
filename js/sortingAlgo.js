@@ -52,3 +52,11 @@ function ArrayList() {
       }
     }
   };
+
+  // Insertion sort
+  this.insertionSort = function() {
+    
+    // hold the length
+    var length = array.length;
+    var j;
+    var temp;
