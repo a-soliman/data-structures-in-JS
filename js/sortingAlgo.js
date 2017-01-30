@@ -82,3 +82,7 @@ function ArrayList() {
   this.mergeSort = function() {
     array = mergeSortRec(array);
   };
+
+  //helper func to break down the array into its half 
+  var mergeSortRec = function(array) {
+    var length = array.length;
