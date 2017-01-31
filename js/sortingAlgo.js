@@ -101,3 +101,6 @@ function ArrayList() {
     return merge(mergeSortRec(left), mergeSortRec(right));
     }
   };
+
+  //helper func to merge out the broken down Arrays
+  var merge = function(left, right) {
