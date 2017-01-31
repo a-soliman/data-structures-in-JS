@@ -143,3 +143,22 @@ function ArrayList() {
   this.quickSort = function() {
     quick(array, 0, array.length - 1);
   };
+
+  // helper method for the quickSort ((quick))
+  var quick = function(array, left, right) {
+    
+    var index;
+    
+    if(array.length > 1 ) {
+      
+      index = partition(array, left, right);
+      
+      if(left < index - 1) {
+        quick(array, left, index - 1);
+      }
+      
+      if(index < right) {
+        quick(array, index, right);
+      }
+    }
+  };
