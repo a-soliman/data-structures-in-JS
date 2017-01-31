@@ -104,3 +104,23 @@ function ArrayList() {
 
   //helper func to merge out the broken down Arrays
   var merge = function(left, right) {
+
+  	//creat an array to hold the result
+    var result = [];
+    
+    //create vars to hold the i in left and right
+    var il = 0;
+    var ir = 0;
+    
+    //loop using while in both of the arrays at once
+    while(il < left.length && ir < right.length) {
+      //check which one is smaller and place first
+      if(left[il] < right[ir]) {
+        result.push(left[il]);
+        il++;
+      }
+      else {
+        result.push(right[ir]);
+        ir++;
+      }
+    }
