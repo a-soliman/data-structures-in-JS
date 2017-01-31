@@ -138,3 +138,8 @@ function ArrayList() {
     
     return result;
   };
+
+  // quickSort
+  this.quickSort = function() {
+    quick(array, 0, array.length - 1);
+  };
