@@ -124,3 +124,17 @@ function ArrayList() {
         ir++;
       }
     }
+
+    //new wile for the remaining item could be at left or right
+    while(il < left.length) {
+      result.push(left[il]);
+      il++;
+    }
+    
+    while(ir < right.length) {
+      result.push(right[ir]);
+      ir++;
+    }
+    
+    return result;
+  };
