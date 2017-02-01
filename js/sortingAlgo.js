@@ -207,3 +207,17 @@ function ArrayList() {
       heapify(array, heapSize, 0);
     }
   };
+
+  //buildHeap method -> heloper function to heapSort
+  var buildHeap = function(array) {
+    //stor the length
+    var heapSize = array.length;
+    
+    //loop to find out the last parent
+    for(var i = Math.floor(array.length / 2 ); i >= 0; i--) {
+      // call the heapify function
+      heapify(array, heapSize, i);
+    }
+  };
+
+  
