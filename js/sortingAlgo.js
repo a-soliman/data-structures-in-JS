@@ -220,4 +220,9 @@ function ArrayList() {
     }
   };
 
-  
+  // heapify method -> helper function to heapSort
+  var heapify = function(array, heapSize, i) {
+    //set the variables
+    var left = i * 2 + 1;
+    var right = i * 2 + 2;
+    var largest = i;
