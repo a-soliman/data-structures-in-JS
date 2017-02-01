@@ -165,3 +165,25 @@ function ArrayList() {
 
   //helper method for the quickSort ((partition))
   var partition = function(array, left, right) {
+
+  	var pivot = array[Math.floor((left + right) / 2)];
+    
+    var i = left;
+    var j = right;
+    
+    while(i <= j) {
+      while(array[i] < pivot) {
+        i++;
+      }
+      while(array[j] > pivot) {
+        j--;
+      }
+      if(i <= j) {
+        swap(array, i, j);
+        i++;
+        j--;
+      }
+    }
+    return i;
+  };
+  //===========================================================================
