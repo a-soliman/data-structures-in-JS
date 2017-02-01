@@ -187,3 +187,23 @@ function ArrayList() {
     return i;
   };
   //===========================================================================
+
+  //heapSort
+  this.heapSort = function() {
+    
+    //get the length
+    var heapSize = array.length;
+    
+    //build the tree through calling the helper method
+    buildHeap(array);
+    
+    //
+    while(heapSize > 1) {
+      //less the size of the array 
+      heapSize--;
+      
+      //swap the first and the last items
+      swap(array, 0, heapSize);
+      heapify(array, heapSize, 0);
+    }
+  };
