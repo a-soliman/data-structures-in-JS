@@ -162,3 +162,6 @@ function ArrayList() {
       }
     }
   };
+
+  //helper method for the quickSort ((partition))
+  var partition = function(array, left, right) {
