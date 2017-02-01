@@ -226,3 +226,21 @@ function ArrayList() {
     var left = i * 2 + 1;
     var right = i * 2 + 2;
     var largest = i;
+
+    // conditions to detrmain the heighest value
+    if(left < heapSize && array[left] > array[largest]) {
+      largest = left;
+    }
+    
+    if(right < heapSize && array[right] > array[largest]) {
+      largest = right;
+    }
+    
+    if(largest !== i ) {
+      
+      //swap the vals
+      swap(array, i, largest);
+      //rehepify
+      heapify(array, heapSize, i);
+    }
+  }
