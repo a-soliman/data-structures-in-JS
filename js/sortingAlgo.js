@@ -247,3 +247,12 @@ function ArrayList() {
 
    //=========================================================================================
       //=== Algorithm Searching ===
+
+      //sequentialSearch
+  this.sequentialSearch = function(item) {
+    //One Way
+    // for(var i = 0; i < array.length; i++) {
+    //   if(item = array[i]) {
+    //     return true;
+    //   }
+    // }
