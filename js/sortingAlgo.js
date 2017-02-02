@@ -256,3 +256,7 @@ function ArrayList() {
     //     return true;
     //   }
     // }
+
+    //other Way
+    return item in array;
+  }
