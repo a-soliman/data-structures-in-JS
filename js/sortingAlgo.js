@@ -267,3 +267,11 @@ function ArrayList() {
   }
   
 };
+
+//=========================================================================
+
+/*
+//creating an ArrayList 
+function ArrayList() {
+  this.array = [];
+}
