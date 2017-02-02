@@ -244,3 +244,6 @@ function ArrayList() {
       heapify(array, heapSize, i);
     }
   }
+
+   //=========================================================================================
+      //=== Algorithm Searching ===
