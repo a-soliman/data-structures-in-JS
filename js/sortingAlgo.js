@@ -260,3 +260,10 @@ function ArrayList() {
     //other Way
     return item in array;
   }
+
+  //binarySearch
+  this.binarySearch = function(item) {
+    
+  }
+  
+};
