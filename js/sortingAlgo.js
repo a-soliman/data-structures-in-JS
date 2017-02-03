@@ -275,3 +275,8 @@ function ArrayList() {
 function ArrayList() {
   this.array = [];
 }
+
+//an insert method
+ArrayList.prototype.insert = function(item) {
+  this.array.push(item);
+};
