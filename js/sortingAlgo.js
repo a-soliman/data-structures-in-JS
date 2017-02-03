@@ -350,3 +350,9 @@ ArrayList.prototype.insertionSort = function() {
     this.array[j] = temp;
   }
 };
+
+
+// mergeSort
+ArrayList.prototype.mergeSort = function() {
+  array = mergeSortRec(this.array);
+}
