@@ -302,3 +302,25 @@ ArrayList.prototype.bubbleSort = function() {
     }
   }
 };
+
+//the selectionSort Algorithm
+ArrayList.prototype.selectionSort = function() {
+  // store the length
+  var length = this.array.length
+  //declare a var to hold the min 
+  var indexMin;
+  
+  //loop through the array -1
+  for(var i = 0; i <length-1; i++) {
+    indexMin = i;
+    
+    for(var j = i; j < length; j++) {
+      if(this.array[indexMin] > this.array[j]) {
+        indexMin = j;
+      }
+    }
+    if( i !== indexMin) {
+      swap(this.array, i, indexMin);
+    }
+  }
+};
