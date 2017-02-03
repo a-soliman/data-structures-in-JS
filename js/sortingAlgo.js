@@ -280,3 +280,8 @@ function ArrayList() {
 ArrayList.prototype.insert = function(item) {
   this.array.push(item);
 };
+
+//toString method
+ArrayList.prototype.toString = function() {
+  return this.array.join();
+};
