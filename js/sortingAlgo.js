@@ -285,3 +285,20 @@ ArrayList.prototype.insert = function(item) {
 ArrayList.prototype.toString = function() {
   return this.array.join();
 };
+
+
+//the bubbleSort Algorithm
+ArrayList.prototype.bubbleSort = function() {
+  
+  //store the length of the array 
+  var length = this.array.length;
+  
+  //loop through the array
+  for(var i = 0; i < length; i++) {
+    for(var j = 0; j < length-1; j++) {
+      if(this.array[j] > this.array[j+1]) {
+        swap(this.array, j, j+1);
+      }
+    }
+  }
+};
