@@ -324,3 +324,29 @@ ArrayList.prototype.selectionSort = function() {
     }
   }
 };
+
+//the insertionSort Algorithm
+ArrayList.prototype.insertionSort = function() {
+  var length = this.array.length;
+  var j;
+  var temp;
+  
+  //loop through starting by the position 1 ((assuming that the first position is sorted)
+  for(var i = 1; i < length; i++) {
+    //define j
+    j = i;
+    
+    //define the temp element
+    temp = this.array[i];
+    
+    //while the one before is greater than the current one
+    while(j > 0 && this.array[j-1] > temp) {
+      //shift the shift the one before
+      this.array[j] = this.array[j-1];
+      
+      //minimize the j value
+      j--;
+    }
+    this.array[j] = temp;
+  }
+};
