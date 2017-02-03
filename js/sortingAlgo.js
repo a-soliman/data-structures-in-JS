@@ -356,3 +356,21 @@ ArrayList.prototype.insertionSort = function() {
 ArrayList.prototype.mergeSort = function() {
   array = mergeSortRec(this.array);
 }
+
+
+
+var mergeSortRec = function (array) {
+  var length = array.length;
+  
+  if(length === 1) {
+    
+    return array;
+  } 
+  else {
+    var med = Math.floor(length / 2);
+    var left = array.slice(0, med);
+    var right = array.slice(med, length);
+    
+    return merge(mergeSortRec(left), mergeSortRec(right));
+  }
+};
