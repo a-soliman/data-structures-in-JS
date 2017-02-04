@@ -450,3 +450,24 @@ var partition = function(array, left, right) {
   }
   return i;
 };
+
+
+ArrayList.prototype.heapSort = function() {
+  // get the length
+  var heapSize = this.array.length;
+  
+  // call the builder to build the tree
+  buildHeap(this.array);
+  
+  while(heapSize > 1) {
+    
+    // decrease the count
+    heapSize--;
+    
+    //swap the first with the last
+    swap(this.array, 0, heapSize);
+    
+    //call the heapify
+    heapify(this.array, heapSize, 0);
+  }
+};
