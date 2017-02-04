@@ -483,3 +483,23 @@ var buildHeap = function(array) {
     heapify(array, heapSize, i);
   }
 };
+
+var heapify = function(array, heapSize, i) {
+  var left = i * 2 + 1;
+  var right = i * 2 + 2;
+  var largest = i;
+  
+  if( left < heapSize && array[left] > array[largest]) {
+    largest = left;
+  }
+  
+  if( right < heapSize && array[right] > array[largest]) {
+    largest = right;
+  }
+  
+  if(largest !== i) {
+    // swap them together
+    swap(array, i, largest);
+    heapify(array, heapSize, largest);
+  }
+};
