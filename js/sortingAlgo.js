@@ -391,4 +391,16 @@ var merge = function(left, right) {
       ir++;
     }
   }
+
+  while(il < left.length) {
+    result.push(left[il]);
+    il++;
+  }
+  
+  while(ir < right.length) {
+    result.push(right[ir]);
+    ir++;
+  }
+  return result;
+};
   
