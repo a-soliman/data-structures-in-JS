@@ -404,3 +404,8 @@ var merge = function(left, right) {
   return result;
 };
   
+
+// quickSort
+ArrayList.prototype.quickSort = function() {
+  quick(this.array, 0, this.array.length-1);
+};
