@@ -471,3 +471,15 @@ ArrayList.prototype.heapSort = function() {
     heapify(this.array, heapSize, 0);
   }
 };
+
+var buildHeap = function(array) {
+  //get the length
+  var heapSize = array.length;
+  
+  //loop using for to detrmain the last parent
+  for(var i = Math.floor(array.length / 2); i >= 0; i--) {
+    
+    //call the heapify on the result
+    heapify(array, heapSize, i);
+  }
+};
