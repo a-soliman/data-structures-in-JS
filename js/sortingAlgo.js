@@ -526,3 +526,13 @@ function creatNonSortedArray(size) {
   
   return array;
 };
+
+
+var array = creatNonSortedArray(5);
+console.log(array.toString());
+
+/*
+// == testing bubbleSort ==
+array.bubbleSort();
+console.log(array.toString())
+*/
