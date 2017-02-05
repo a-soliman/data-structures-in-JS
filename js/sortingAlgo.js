@@ -516,3 +516,13 @@ var swap = function(array, index1, index2) {
   array[index1] = array[index2];
   array[index2] = aux;
 };
+
+// === testing ===
+function creatNonSortedArray(size) {
+  var array = new ArrayList();
+  for(var i =  size; i> 0; i--) {
+    array.insert(i);
+  }
+  
+  return array;
+};
