@@ -536,3 +536,9 @@ console.log(array.toString());
 array.bubbleSort();
 console.log(array.toString())
 */
+
+/*
+// == testing selectionSort == 
+array.selectionSort();
+console.log('Selection Sort : ', array.toString());
+*/
