@@ -503,3 +503,16 @@ var heapify = function(array, heapSize, i) {
     heapify(array, heapSize, largest);
   }
 };
+
+
+*/
+//===================================================================================================
+
+var swap = function(array, index1, index2) {
+  
+  //store the pos 0
+  var aux = array[index1];
+  //switch the 1st and 2nd values
+  array[index1] = array[index2];
+  array[index2] = aux;
+};
