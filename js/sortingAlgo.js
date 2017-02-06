@@ -542,3 +542,9 @@ console.log(array.toString())
 array.selectionSort();
 console.log('Selection Sort : ', array.toString());
 */
+
+/*
+// == testing insertionSort == 
+array.insertionSort();
+console.log('Insertion Sort : ', array.toString());
+*/
