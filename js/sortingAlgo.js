@@ -548,3 +548,8 @@ console.log('Selection Sort : ', array.toString());
 array.insertionSort();
 console.log('Insertion Sort : ', array.toString());
 */
+
+/*
+array.mergeSort();
+console.log('Merge Sort : ', array.toString());
+*/
