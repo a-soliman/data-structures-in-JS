@@ -558,3 +558,6 @@ console.log('Merge Sort : ', array.toString());
 array.quickSort();
 console.log('Quick Sort : ', array.toString());
 */
+
+array.heapSort();
+console.log('Heap Sort : ', array.toString());
