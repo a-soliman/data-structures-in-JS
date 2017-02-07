@@ -561,3 +561,6 @@ console.log('Quick Sort : ', array.toString());
 
 array.heapSort();
 console.log('Heap Sort : ', array.toString());
+
+//== testing serching algorithms
+console.log('sequentialSearch 3 : ', array.sequentialSearch(3))
