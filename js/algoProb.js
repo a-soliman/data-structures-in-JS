@@ -25,3 +25,23 @@ function CoinsCounter(coinsSet, amount) {
   //if no amount just return false 
   if(!amount) {
     return false;
+    }
+  // if there is an amount run the Algorithm
+  else if(amount) {
+    var givenAmount = amount;
+    var coinUsed = [];
+    //loop through the coins set
+    for(var i = 0; i < coinsSet.length; i++) {
+      // check if amount is greater than the coin;
+      if(amount >= coinsSet[i]) {
+        newAmount = amount - coinsSet[i];
+        coinUsed.push(coinsSet[i]);
+        amount = newAmount;
+        //console.log('new Amount = ' + amount + ' - ' + coinsSet[i] +' = ' + newAmount )
+        
+        if(amount >= coinsSet[i]) {
+          recount(amount);
+        //console.log('new Amount = ' + amount + ' - ' + coinsSet[i] +' = ' + newAmount )
+        }
+      }
+    }
