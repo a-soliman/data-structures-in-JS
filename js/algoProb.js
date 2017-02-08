@@ -45,11 +45,10 @@ function CoinsCounter(coinsSet, amount) {
         }
       }
     }
-    
+
     console.log('Use : ' + coinUsed + ', to change : ' + givenAmount);
     return coinUsed;
   }
-  
-  
-  
 }
+
+var usCoins= new CoinsCounter([25, 10, 5, 1], 46);
