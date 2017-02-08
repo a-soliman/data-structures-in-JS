@@ -8,3 +8,4 @@ function findIndex(array, target) {
   }
   return false;
 }
+findIndex([7, 3, 6, 1,0], 6);
