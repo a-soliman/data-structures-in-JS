@@ -18,3 +18,10 @@ function CoinsCounter(coinsSet, amount) {
       return;
     }
   };
+
+  //================================================
+  // the real function starts here
+  
+  //if no amount just return false 
+  if(!amount) {
+    return false;
