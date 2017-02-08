@@ -45,3 +45,11 @@ function CoinsCounter(coinsSet, amount) {
         }
       }
     }
+    
+    console.log('Use : ' + coinUsed + ', to change : ' + givenAmount);
+    return coinUsed;
+  }
+  
+  
+  
+}
