@@ -1,1 +1,10 @@
 // www.openmind.com => ALGO
+// Linear Search
+function findIndex(array, target) {
+  for(var i = 0; i < array.length; i++) {
+    if(array[i] === target) {
+      return i;
+    }
+  }
+  return false;
+}
