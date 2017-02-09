@@ -49,3 +49,20 @@ LinkedList.prototype.addToTail = function(value) {
   this.tail = newNode;
 };
 
+
+LinkedList.prototype.size = function() {
+  if(!this.head) {
+    return 0;
+  }
+  else {
+    var currentNode = this.head;
+    var size = 0;
+    while(currentNode) {
+      size++;
+      currentNode = currentNode.next;
+    }
+  }
+  return size;
+};
+
+
