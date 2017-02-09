@@ -9,3 +9,11 @@ function findIndex(array, target) {
   return false;
 }
 findIndex([7, 3, 6, 1,0], 6);
+
+
+//========================================================================================
+// Linked Lists
+function LinkedList() {
+  this.head = null;
+  this.tail = null;
+}
