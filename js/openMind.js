@@ -110,3 +110,21 @@ LinkedList.prototype.removeTail = function() {
   return val;
 };
 
+
+LinkedList.prototype.search = function(searchedValue) {
+  if(!this.head) {
+    return false;
+  }
+  else {
+    var currentNode = this.head;
+    
+    while(currentNode) {
+      if(searchedValue === currentNode.value) {
+        return currentNode;
+      }
+      currentNode = currentNode.next;
+    }
+    return null;
+  }
+};
+
