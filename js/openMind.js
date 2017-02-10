@@ -66,3 +66,14 @@ LinkedList.prototype.size = function() {
 };
 
 
+LinkedList.prototype.isEmpty = function() {
+  if(!this.head) {
+    return true;
+  }
+  else if(this.head) {
+    return false;
+  }
+};
+
+
+
