@@ -128,3 +128,25 @@ LinkedList.prototype.search = function(searchedValue) {
   }
 };
 
+
+LinkedList.prototype.indexOf = function(value) {
+  if(!this.value) {
+    return false;
+  }
+  else {
+    var currentNode = this.head;
+    var indexs = [];
+    var currentIndex = 0;
+    
+    while(currentNode) {
+      if(value === currentNode.value) {
+        indexs.push(currentIndex);
+      }
+      currentIndex++;
+      currentNode = currentNode.next;
+    }
+  }
+  return indexs;
+};
+
+
