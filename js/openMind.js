@@ -75,5 +75,22 @@ LinkedList.prototype.isEmpty = function() {
   }
 };
 
+LinkedList.prototype.removeHead = function() {
+  if(!this.head) {
+    return false;
+  }
+  else{
+    var val = this.head.value;
+    this.head = this.head.next;
+    if(this.head) {
+      this.head.prev = null;
+    }
+    else{ 
+      this.tail = null;
+    }
+  }
+  return val;
+};
+
 
 
