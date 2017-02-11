@@ -170,5 +170,9 @@ LinkedList.prototype.print = function() {
 //=========================================================
 
 //HashTables
+function HashTable(size) {
+  this.buckets = array(size);
+  this.numBuckets = this.buckets.length;
+}
 
 
