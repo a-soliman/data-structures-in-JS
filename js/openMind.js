@@ -276,3 +276,26 @@ BST.prototype.insert = function(value) {
     }
   }
 };
+
+// contains
+BST.prototype.containes = function(value) {
+  if(value = this.value) {
+    return true;
+  }
+  else if(value < this.value) {
+    if(!this.left) {
+      return false;
+    }
+    else {
+      return this.left.containes(value);
+    }
+  }
+  else if(value > this.value) {
+    if(!this.right) {
+      return false;
+    }
+    else {
+      return this.right.containes(value);
+    }
+  }
+}
