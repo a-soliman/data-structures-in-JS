@@ -234,3 +234,19 @@ HashTable.prototype.get = function(key) {
   return null;
 };
 
+HashTable.prototype.retriveAll = function() {
+ 
+  var nodes = [];
+  for(var i = 0; i < this.numBuckets; i++) {
+    var currentNode = this.buckets[i];
+    
+    while(currentNode) {
+      nodes.push(currentNode);
+      
+      currentNode = currentNode.next;
+    }
+  }
+  return nodes;
+}
+
+//====================================================================================================
