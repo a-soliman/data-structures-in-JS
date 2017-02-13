@@ -340,3 +340,13 @@ BST.prototype.breadthFirstTraversal = function(iterateFunc) {
     }
   }
 };
+
+
+BST.prototype.getMinVal = function() {
+  if(this.left) {
+    return this.left.getMinVal();
+  }
+  else{
+    return this.value;
+  }
+};
