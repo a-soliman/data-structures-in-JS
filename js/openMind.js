@@ -350,3 +350,13 @@ BST.prototype.getMinVal = function() {
     return this.value;
   }
 };
+
+
+BST.prototype.getMaxVal = function() {
+  if(this.right) {
+    return this.right.getMaxVal();
+  }
+  else{
+    return this.value;
+  }
+}
