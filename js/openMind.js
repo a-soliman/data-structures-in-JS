@@ -322,3 +322,21 @@ BST.prototype.depthFirstTraversal = function(iterateFunc, order) {
     iterateFunc(this.value)
   }
 };
+
+
+BST.prototype.breadthFirstTraversal = function(iterateFunc) {
+  var queue = [this];
+  
+  while(queue.length) {
+    
+    var treeNode = queue.shift();
+    iterateFunc(treeNode);
+    
+    if(treeNode.left) {
+      queue.push(treeNode.left);
+    }
+    if(treeNode.right) {
+      queue.push(treeNode.right);
+    }
+  }
+};
