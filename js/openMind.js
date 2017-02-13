@@ -299,3 +299,26 @@ BST.prototype.containes = function(value) {
     }
   }
 }
+
+BST.prototype.depthFirstTraversal = function(iterateFunc, order) {
+  
+  if(order === 'pre-order') {
+    iterateFunc(this.value)
+  }
+  
+  if(this.left) {
+    this.left.depthFirstTraversal(iterateFunc);
+  }
+  
+  if(order === 'in-order') {
+    iterateFunc(this.value)
+  }
+  
+  if(this.right) {
+    this.right.depthFirstTraversal(iterateFunc)
+  }
+  
+  if(order === 'post-order') {
+    iterateFunc(this.value)
+  }
+};
