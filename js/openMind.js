@@ -383,3 +383,6 @@ function binarySearch(values, target, start, end) {
   }
   return middle;
 }
+
+
+findIndex([1, 4, 6, 7, 12, 13, 15, 18, 19, 20, 22, 24], 20);
