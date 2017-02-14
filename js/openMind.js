@@ -366,4 +366,20 @@ BST.prototype.getMaxVal = function() {
 
 function findIndex(values, target) {
   return binarySearch(values, target, 0, values.length -1);
+}
 
+function binarySearch(values, target, start, end) {
+  if(start > end) {
+    return -1;
+  }
+  var middle = Math.floor((start + end) / 2);
+  var value = values[middle];
+  
+  if(target < value) {
+    return binarySearch(values, target, 0, middle -1);
+  }
+  if(target > value) {
+    return binarySearch(values, target, middle +1, end)
+  }
+  return middle;
+}
