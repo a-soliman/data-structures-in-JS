@@ -360,3 +360,6 @@ BST.prototype.getMaxVal = function() {
     return this.value;
   }
 }
+
+//=========================================================
+//=== Binary Search ===
