@@ -363,3 +363,7 @@ BST.prototype.getMaxVal = function() {
 
 //=========================================================
 //=== Binary Search ===
+
+function findIndex(values, target) {
+  return binarySearch(values, target, 0, values.length -1);
+
