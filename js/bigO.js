@@ -9,3 +9,16 @@ function increasment(num) {
 
 //2) O(n) => Linear
   // n stands for the size of the input => array in this exampl
+  function sequntialSearch(array, item) {
+  var length = array.length
+  var cost = 0;
+  
+  for(var i =0; i < array.length; i++) {
+    cost++;
+    if(array[i] === item) {
+      return i;
+    }
+  }
+  console.log('Cost for sequntialSearch of size : ' + length +' ,is : ' +cost)
+  return -1;
+}
