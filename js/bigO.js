@@ -22,3 +22,5 @@ function increasment(num) {
   console.log('Cost for sequntialSearch of size : ' + length +' ,is : ' +cost)
   return -1;
 }
+
+sequntialSearch([1,2,3,4,5,6,7,8,9,10], 11);
