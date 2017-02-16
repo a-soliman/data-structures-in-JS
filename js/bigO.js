@@ -47,3 +47,5 @@ function bubbleSort(array) {
   }
   console.log('Cost for bubbleSort input size : ' + length + ' ,is : ' + cost );
 }
+
+bubbleSort([2,1,4,9,3,8,10,6,7,5]);
