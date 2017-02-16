@@ -31,3 +31,19 @@ function swap(array, index1, index2) {
   array[index1] = array[index2];
   array[index2] = aux;
 }
+
+function bubbleSort(array) {
+  var length = array.length;
+  var cost = 0;
+  
+  for(var i = 0; i < length; i++) {
+    cost++;
+    for(var j = 0; j <length-1; j++) {
+      cost++;
+      if(array[j] > array[j+1]) {
+        swap(array, j, j+1);
+      }
+    }
+  }
+  console.log('Cost for bubbleSort input size : ' + length + ' ,is : ' + cost );
+}
