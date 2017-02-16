@@ -26,3 +26,8 @@ function increasment(num) {
 sequntialSearch([1,2,3,4,5,6,7,8,9,10], 11);
 
 //3) O(n2) => Quadratic 
+function swap(array, index1, index2) {
+  var aux = array[index1];
+  array[index1] = array[index2];
+  array[index2] = aux;
+}
